@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+import mongoose from "mongoose"
 const studentSchema =mongoose.Schema({
     fristName:{
         type:String,
@@ -20,4 +20,4 @@ const studentSchema =mongoose.Schema({
 },{timestamps:true})
 
 const Student = mongoose.model("Student",studentSchema)
-module.exports = Student
+export default Student

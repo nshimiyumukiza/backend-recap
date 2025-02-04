@@ -1,4 +1,4 @@
-const Student = require("../models/student.model")
+import Student from "../models/student.model.js"
 const createStudent = async(req,res)=>{
     try{
 const student = await Student.create(req.body)
@@ -67,4 +67,4 @@ const deleteUser = async(req,res)=>{
 }
 
 
-module.exports = {createStudent,getStudent,getOneStudent,updateStudent,deleteUser}
+export {createStudent,getStudent,getOneStudent,updateStudent,deleteUser}
